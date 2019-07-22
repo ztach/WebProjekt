@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/styles_resp_flex.css">
+  <% include ./partials/head %>
+
+</head> 
+
+<body>
+
+<header class="app-header">
+    <% include ./partials/header %>
+</header>
+
+  <section class="hero">
+    <div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
+
+      <section class="our-work">
+        <ul class="grid">
+          <li class="small" style="background-image: url(/img/coast.jpg);"></li>
+          <li class="large" style="background-image: url(/img/island.jpg);"></li>
+          <li class="large" style="background-image: url(/img/balloon.jpg);"></li>
+          <li class="small" style="background-image: url(/img/mountain.jpg);"></li>
+        </ul>
+      </section>
+
+
+
+  </section>
+
+<div class="home">
+
+<div class="user-app">
+<div class="wrapper">
+<section class="slogan">
+<h1 class="slogan__header">Zaloguj się.
+</h1>
+<p class="slogan__text">Dużo korzysci po zalogowaniu się.
+</p>
+<div class="actions">
+<button class="btn btn--primary" @click="formLightbox=true">LOGOWANIE </button>
+</div>
+
+</section>
+
+
+
+
+
+
+  <footer>
+      <% include ./partials/media %>
+
+      <p>Idź do <a href="http://tutorialzine.com/" target="_blank">stronki 'tutorialzine'</a>.</p>
+      <p><a href="https://speckyboy.com/" target="_blank">darmowe templatki</a>.</p>
+      <p>darmowe zdjęcia:  <a href="http://unsplash.com/" target="_blank">unsplash</a>.</p>
+  </footer>
+
+
+
+
+</div>
+</body>
+</html>
