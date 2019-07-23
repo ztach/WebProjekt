@@ -455,3 +455,84 @@ footer p a{
 @media (max-width: 1200px) {
 	#bsaHolder{ display:none;}
 }
+
+
+
+table.redTable {
+	border: 2px solid rgb(5, 63, 102);
+	background-color: rgb(5, 63, 102);
+	width: 90%;
+	text-align: center;
+	border-collapse: collapse;
+  }
+  table.redTable td, table.redTable th {
+	border: 1px solid #AAAAAA;
+	padding: 3px 2px;
+  }
+  table.redTable tbody td {
+	font-size: 13px;
+  }
+  table.redTable tr:nth-child(even) {
+	background: rgb(5, 63, 102);
+  }
+  table.redTable thead {
+	background: rgba(5, 63, 102, 0.329);
+  }
+  table.redTable thead th {
+	font-size: 19px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	border-left: 2px solid rgb(5, 63, 102);
+  }
+  table.redTable thead th:first-child {
+	border-left: none;
+  }
+  
+  table.redTable tfoot {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: rgb(5, 63, 102);
+  }
+  table.redTable tfoot td {
+	font-size: 13px;
+  }
+  table.redTable tfoot .links {
+	text-align: right;
+  }
+  table.redTable tfoot .links a{
+	display: inline-block;
+	background: #FFFFFF;
+	color: rgb(5, 63, 102);
+	padding: 2px 8px;
+	border-radius: 5px;
+  }
+
+  table.blueTable{
+	border: 2px solid rgb(5, 63, 102);
+	background-color: rgb(5, 63, 102);
+	width: 40%;
+	text-align: center;
+	border-collapse: collapse;
+  }
+
+
+  div.Text{
+	  display: block;
+	  width: 900px;
+	  padding:30px 0;
+	  text-align: justify;
+  }
+  div.Text h3 {
+	text-align: center;
+  }
+
+  div.Text p {
+	text-align: left;
+  }
+
+  div.Text em {
+	text-align: left;
+	font-weight: bold;
+  }

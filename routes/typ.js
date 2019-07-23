@@ -4,7 +4,7 @@ const router = express.Router();
 const typeController = require('../controllers/typeController');
 const isExistMiddlware = require('../middleware/ifExists');
 
-router.get('/', typeController.getAllController);
+router.get('/', typeController.getAllController );
 
 router.post('/', typeController.postTypeController);
 
@@ -26,5 +26,6 @@ router.delete('/:id',
                     isExistMiddlware.checkIDExist,
                     typeController.deleteIdController
 );
+
 
 module.exports = router;
