@@ -48,7 +48,7 @@ router.post('/', function(req, res){
 });
 
 router.get('/:id', [checkIDInput, checkIDExist], function(req, res){
-    console.log('Get dict by id',req.params.id);
+    //console.log('Get dict by id',req.params.id);
     Dict.findByPk(req.params.id).then(dict => {
         //console.log(dict);
         res.status(200).json(dict);

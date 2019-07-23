@@ -8,7 +8,7 @@ var osoba = {
 }
 
 router.get('/',function(req,res) {
-	res.render('contact',osoba);
+	res.render('home',osoba);
 });
 
 module.exports = router;
