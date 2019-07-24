@@ -19,11 +19,16 @@ var port = process.env.PORT || 3001;
 // models
 var models = require("./models");
 
-// routes
-var dicts = require('./routes/dictsVw');
-var dict = require('./routes/dict');
-var typ = require('./routes/typ');
+// routes views
+var ViewDicts = require('./routes/ViewDictsVw');
+var ViewDict = require('./routes/ViewDict');
+var ViewTyp = require('./routes/ViewTyp');
 var myPage = require('./routes/page');
+
+// routes json
+var dict = require('./routes/Dict');
+var type = require('./routes/Typ');
+var dicts = require('./routes/dictsVw');
 
 //Sync Database
 models.sequelize.sync({ force: false }).then(function() {
@@ -39,11 +44,16 @@ app.use(bodyParser.urlencoded({
 
 app.use(cors());
 
-// register routes
+// register routes views
 app.use('/',myPage);
+app.use('/ViewDicts', ViewDicts);
+app.use('/ViewDict', ViewDict);
+app.use('/ViewTyp', ViewTyp);
+
+// register routes json
 app.use('/dicts', dicts);
 app.use('/dict', dict);
-app.use('/type', typ);
+app.use('/type', type);
 
 // index path
 // app.get('/', function(req, res){
